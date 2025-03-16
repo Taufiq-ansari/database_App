@@ -1,0 +1,3 @@
+git init                 #create empty repo
+git add                  # finailize all files and folder
+git -m " comment"        #comments
