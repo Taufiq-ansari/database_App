@@ -33,7 +33,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Sqlite Notes"),
+        title: const Text("Sqlite notes"),
       ),
 
       // all note visible here
@@ -58,10 +58,6 @@ class _HomePageState extends State<HomePage> {
                             showModalBottomSheet(
                               context: context,
                               builder: (context) {
-                                // titleController.text =
-                                // allNote[index][DbHepler.COLUMN_NOTE_TITLE];
-                                // descController.text =
-                                // allNote[index][DbHepler.COLUMN_NOTE_DESC];
                                 return getBottomSheetWidget(
                                     isUpdate: true,
                                     sno: allNote[index]
